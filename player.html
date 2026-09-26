@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TECCINE - Assistir</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="menu">
+
+        <div class="logo">
+            TECCINE
+        </div>
+
+        <a href="index.html">Início</a>
+        <a href="tecnico.html">Técnico</a>
+        <a href="generos.html">Gêneros</a>
+        <a href="filmes.html">Filmes</a>
+        <a href="series.html">Séries</a>
+
+    </nav>
+
+
+    <main class="pagina-player">
+
+        <h1 id="titulo-player">🎬 Carregando filme...</h1>
+
+        <div class="player">
+
+            <video id="video-player" controls>
+
+                Seu navegador não suporta a reprodução de vídeo.
+
+            </video>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        // Pega o nome do vídeo que veio pela URL
+        const parametros = new URLSearchParams(window.location.search);
+
+        const nomeVideo = parametros.get("video");
+
+
+        // Elementos da página
+        const player = document.getElementById("video-player");
+        const titulo = document.getElementById("titulo-player");
+
+
+        // Se encontrou um vídeo
+        if (nomeVideo) {
+
+            // Coloca o vídeo dentro do player
+            player.src = "videos/" + nomeVideo;
+
+            // Cria um título a partir do nome do arquivo
+            let nomeFilme = nomeVideo
+                .replace(".mp4", "")
+                .replaceAll("-", " ");
+
+            // Deixa as primeiras letras mais bonitas
+            nomeFilme = nomeFilme.replace(/\b\w/g, function(letra) {
+                return letra.toUpperCase();
+            });
+
+            titulo.textContent = "🎬 " + nomeFilme;
+
+        } else {
+
+            titulo.textContent = "🎬 Nenhum filme selecionado";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

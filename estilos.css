@@ -1,0 +1,999 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #0dcaf0;
+    padding: 15px 30px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.pesquisa {
+    display: flex;
+    margin-left: auto;
+}
+.pesquisa input {
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+.pesquisa button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+.destaques {
+    padding: 40px 30px;
+}
+.destaques h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.cards {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding-bottom: 15px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.cards::-webkit-scrollbar {
+    display: none;
+}
+.card {
+    width: 220px;
+    flex: 0 0 220px;
+}
+.capa {
+    height: 260px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}
+.card h3 {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+.carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.seta {
+    position: absolute;
+    z-index: 2;
+    width: 45px;
+    height: 60px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+.esquerda {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.direita {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50% );
+}
+.recentes {
+    padding: 40px 30px;
+}
+.recentes h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.estudos {
+    padding: 40px 30px;
+}
+.estudos h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.destaque {
+    padding: 40px 30px;
+}
+.destaque h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.rodape {
+    background-color: #111;
+    color: white;
+    padding: 50px 40px 20px;
+    margin-top: 40px;
+}
+
+.info-rodape {
+    margin-bottom: 40px;
+}
+
+.info-rodape h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.info-rodape h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.info-rodape p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.feedback {
+    margin-bottom: 40px;
+}
+
+.feedback h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.feedback p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.feedback input,
+.feedback textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.feedback textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.feedback button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.direitos {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+    color: #888;
+}
+.pagina-tecnico h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.pagina-tecnico > p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.area-tecnico {
+    background-color: #222;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.area-tecnico h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.area-tecnico p {
+    color: #ccc;
+    font-size: 16px;
+    margin: 0;
+}
+.link-area {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.link-area h2 {
+    color: white;
+}
+
+.link-area p {
+    color: #ccc;
+}
+
+.link-area span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0dcaf0;
+    font-weight: 700;
+}
+
+.link-area:hover {
+    color: white;
+}
+.pagina-conteudo {
+    padding: 50px 40px;
+    color: white;
+}
+
+.pagina-conteudo h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.pagina-conteudo p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.filmes-materia {
+    padding: 40px 0;
+}
+
+.filmes-materia h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.pagina-generos {
+    padding: 50px 40px;
+    color: white;
+}
+
+.pagina-generos h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.pagina-generos > p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.generos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card-genero {
+    background-color: #222;
+    padding: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.card-genero:hover {
+    background-color: #333;
+}
+
+.card-genero h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card-genero p {
+    color: #ccc;
+    margin: 0;
+}
+.pagina-filmes {
+    padding: 50px 40px;
+    color: white;
+}
+
+.pagina-filmes h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.pagina-filmes > p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.lista-filmes h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.grade-filmes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.grade-filmes .card {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.grade-filmes .capa {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background-color: #222;
+}
+.grade-filmes .capa img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    .grade-filmes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .grade-filmes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grade-filmes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.pagina-series {
+    padding: 50px 40px;
+    color: white;
+}
+
+.pagina-series h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.pagina-series > p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.lista-series h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.grade-series {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+.grade-series .card {
+    width: 100%;
+}
+
+.grade-series .capa {
+    height: 280px;
+}
+
+@media (max-width: 1000px) {
+    .grade-series {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .grade-series {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grade-series {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.grade-filmes .capa {
+    height: 280px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.grade-filmes .capa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.grade-filmes .card h3 {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 8px;
+}
+/* Capas dos filmes do Técnico */
+.filmes-materia .card {
+    width: 220px;
+    flex: 0 0 220px;
+}
+
+.filmes-materia .capa {
+    width: 220px;
+    height: 280px;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.filmes-materia .capa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.filmes-materia .card h3 {
+    color: white;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 8px;
+    text-align: center;
+}
+.filmes-materia .card h3 {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+.pagina-player {
+    padding: 40px;
+    color: white;
+}
+
+.pagina-player h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.player {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #111;
+}
+
+.player video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* =========================
+   PÁGINA DE DETALHES
+========================= */
+
+.pagina-detalhes {
+    padding: 50px 40px;
+    color: white;
+}
+
+.detalhes-filme {
+    display: grid !important;
+    grid-template-columns: 280px 1fr !important;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.capa-detalhes {
+    width: 280px;
+}
+
+.capa-detalhes img {
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.informacoes-filme {
+    width: 100%;
+}
+
+.informacoes-filme h1 {
+    color: white;
+    font-size: 36px;
+    margin: 0 0 25px 0;
+}
+
+.informacoes-filme h2 {
+    color: white;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.informacoes-filme p {
+    color: #ccc;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.botao-assistir {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background-color: #0dcaf0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.botao-assistir:hover {
+    background-color: #0aa8c7;
+}
+/* ============================= */
+/* PÁGINA DE GÊNEROS */
+/* ============================= */
+
+.pagina-generos {
+    padding: 50px 40px;
+    color: white;
+}
+
+.pagina-generos h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.descricao-generos {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.grade-generos {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.card-genero {
+    text-decoration: none;
+    color: white;
+}
+
+.capa-genero {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.capa-genero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.2s;
+}
+
+.card-genero:hover .capa-genero img {
+    transform: scale(1.04);
+}
+
+.card-genero h2 {
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+/* ============================= */
+/* PÁGINA DO GÊNERO */
+/* ============================= */
+
+.pagina-genero {
+    padding: 50px 40px;
+    color: white;
+}
+
+.voltar-generos {
+    color: #0dcaf0;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.pagina-genero h1 {
+    color: white;
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.pagina-genero > p {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.grade-filmes-genero {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.grade-filmes-genero .card {
+    width: 100%;
+    min-width: 0;
+}
+
+.grade-filmes-genero .capa {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.grade-filmes-genero .capa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.grade-filmes-genero .card h3 {
+    color: black;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.nenhum-filme {
+    display: none;
+    color: #ccc;
+    margin-top: 30px;
+}
+/* ============================= */
+/* CARROSSÉIS DA PÁGINA INICIAL */
+/* ============================= */
+
+.carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.carrossel .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    overflow-x: auto;
+    width: 100%;
+    padding: 10px 50px 20px 50px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.carrossel .cards::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel .card {
+    width: 220px !important;
+    min-width: 220px !important;
+    max-width: 220px !important;
+    flex: 0 0 220px !important;
+    overflow: hidden;
+}
+
+.carrossel .capa {
+    width: 220px !important;
+    height: 300px !important;
+    overflow: hidden;
+    background-color: #222;
+}
+
+.carrossel .capa img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
+}
+
+.carrossel .card h3 {
+    color: black !important;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.carrossel .link-filme {
+    display: block;
+    text-decoration: none;
+}
+
+.carrossel .seta {
+    position: absolute;
+    z-index: 5;
+    width: 45px;
+    height: 60px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.carrossel .esquerda {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carrossel .direita {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* ================================= */
+/* RESPONSIVIDADE - CELULAR */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+    /* MENU */
+    .menu {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .pesquisa {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .pesquisa input {
+        width: 100%;
+    }
+
+    /* PÁGINAS */
+    .pagina-generos,
+    .pagina-genero,
+    .pagina-detalhes,
+    .pagina-player {
+        padding: 30px 15px;
+    }
+
+    /* GÊNEROS */
+    .grade-generos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .capa-genero {
+        height: 180px;
+    }
+
+    .pagina-generos h1,
+    .pagina-genero h1 {
+        font-size: 28px;
+    }
+
+    .descricao-generos,
+    .pagina-genero > p {
+        font-size: 16px;
+    }
+
+    /* FILMES POR GÊNERO */
+    .grade-filmes-genero {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .grade-filmes-genero .capa {
+        height: 240px;
+    }
+
+    /* CATÁLOGO DE FILMES */
+    .grade-filmes {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 15px !important;
+    }
+
+    .grade-filmes .capa {
+        height: 240px;
+    }
+
+    /* DETALHES DO FILME */
+    .detalhes-filme {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+    }
+
+    .capa-detalhes {
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    .capa-detalhes img {
+        width: 220px;
+        height: 320px;
+    }
+
+    .informacoes-filme h1 {
+        font-size: 28px;
+    }
+
+    .informacoes-filme h2 {
+        font-size: 20px;
+    }
+
+    /* CARROSSÉIS */
+    .carrossel .cards {
+        gap: 15px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .carrossel .card {
+        width: 160px !important;
+        min-width: 160px !important;
+        max-width: 160px !important;
+        flex: 0 0 160px !important;
+    }
+
+    .carrossel .capa {
+        width: 160px !important;
+        height: 230px !important;
+    }
+
+    .carrossel .card h3 {
+        font-size: 14px;
+    }
+
+    .carrossel .seta {
+        width: 35px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    /* PLAYER */
+    .player {
+        width: 100%;
+    }
+
+    .pagina-player h1 {
+        font-size: 25px;
+    }
+
+    /* RODAPÉ */
+    .info-rodape,
+    .feedback,
+    .direitos {
+        text-align: center;
+    }
+
+    .feedback input,
+    .feedback textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .grade-generos,
+    .grade-filmes,
+    .grade-filmes-genero {
+        gap: 10px !important;
+    }
+
+    .capa-genero {
+        height: 150px;
+    }
+
+    .grade-filmes .capa,
+    .grade-filmes-genero .capa {
+        height: 210px;
+    }
+
+    .carrossel .card {
+        width: 140px !important;
+        min-width: 140px !important;
+        max-width: 140px !important;
+        flex: 0 0 140px !important;
+    }
+
+    .carrossel .capa {
+        width: 140px !important;
+        height: 200px !important;
+    }
+
+    .carrossel .cards {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .capa-detalhes,
+    .capa-detalhes img {
+        width: 200px;
+    }
+
+    .capa-detalhes img {
+        height: 290px;
+    }
+}
